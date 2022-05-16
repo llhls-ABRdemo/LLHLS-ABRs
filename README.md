@@ -1,4 +1,4 @@
-# LLHLS-ABRs
+# Integration of LLHLS-ABRs (LoL+, L2A, Stallion, and Llama)
 
 # Integration of LoL+ in hls.js
 
@@ -36,9 +36,9 @@ Where:
 - <img src="http://latex.codecogs.com/svg.latex?\sigma=\text{minimum&space;bitrate}" title="http://latex.codecogs.com/svg.latex?\sigma=\text{minimum bitrate}" />
 - <img src="http://latex.codecogs.com/svg.latex?\mu=1" title="http://latex.codecogs.com/svg.latex?\mu=1" />
 
-> The module is implemented in two separate files, _[src/controller/QoeInfo.ts](https://github.com/InanisV/LoLp-HLS-v1.0.0-rc.1/blob/master/src/controller/QoeInfo.ts)_ and _[src/controller/LoLpQoeEvaluator.ts](https://github.com/InanisV/LoLp-HLS-v1.0.0-rc.1/blob/master/src/controller/LoLpQoEEvaluator.ts)_.
+> The module is implemented in two separate files, _[controller/LoLpQoeInfo.ts](https://anonymous.4open.science/r/LLHLS-ABRs-80FE/controller/LoLpQoeInfo.ts)_ and _[controller/LoLpQoeEvaluator.ts](https://github.com/llhls-ABRdemo/LLHLS-ABRs/blob/main/controller/LoLpQoeEvaluator.ts)_.
 
-**QoeInfo.ts** implements a class called **QoeInfo**, which is used to record the metrics and parameters for QoE calculation.
+**LoLpQoeInfo.ts** implements a class called **QoeInfo**, which is used to record the metrics and parameters for QoE calculation.
 
 **LoLpQoeEvaluator.ts** implements a class called **LoLpQoeEvaluator** to set up and calulate QoE value for each segment.
 
@@ -55,7 +55,7 @@ Weights:
 
 To reduce complexity, weights are normalized into a range between 0 and 1, choosing from a value list [0.2, 0.4, 0.6, 0.8, 1]. For each neuron, the algorithm goes through all the possible weight permutations. It is going to select the weight combination that produces best QoE score among all the neurons.
 
-> The module is implemented in [src/controller/LoLpWeightSelector.ts](https://github.com/InanisV/LoLp-HLS-v1.0.0-rc.1/blob/master/src/controller/LoLpWeightSelector.ts).
+> The module is implemented in [controller/LoLpWeightSelector.ts](https://anonymous.4open.science/r/LLHLS-ABRs-80FE/controller/LoLpWeightSelector.ts).
 
 ### Bitrate Selection Module
 
@@ -99,7 +99,7 @@ The whole BMU searching procedure is listed as follows:
 5. Update the states of BMU and its neighbours.
 6. Return the quality level of BMU.
 
-> The module is implemented in [src/controller/learning-abr-controller.ts](https://github.com/InanisV/LoLp-HLS-v1.0.0-rc.1/blob/master/src/controller/learning-abr-controller.ts).
+> The module is implemented in [controller/LoLpRule.ts](https://anonymous.4open.science/r/LLHLS-ABRs-80FE/controller/LoLpRule.ts).
 
 ### Throughput Measurement Module
 
@@ -121,7 +121,7 @@ where:
 - <img src="http://latex.codecogs.com/svg.latex?\inline&space;\text{mdat&space;time}&space;=&space;\text{timestamps&space;of&space;mdat}" title="http://latex.codecogs.com/svg.latex?\inline \text{mdat time} = \text{timestamps of mdat}" />
 - <img src="http://latex.codecogs.com/svg.latex?\inline&space;\text{moof&space;time}&space;=&space;\text{timestamps&space;of&space;moof&space;}" title="http://latex.codecogs.com/svg.latex?\inline \text{moof time} = \text{timestamps of moof }" />
 
-> The module is implemented in [src/utils/fetch-loader.ts](https://github.com/InanisV/LoLp-HLS-v1.0.0-rc.1/blob/master/src/utils/fetch-loader.ts) and [src/controller/abr-controller.ts](https://github.com/InanisV/LoLp-HLS-v1.0.0-rc.1/blob/master/src/controller/abr-controller.ts).
+> The module is implemented in [utils/fetch-loader.ts](https://anonymous.4open.science/r/LLHLS-ABRs-80FE/utils/fetch-loader.ts) and [controller/abr-controller.ts](https://anonymous.4open.science/r/LLHLS-ABRs-80FE/controller/abr-controller.ts).
 
 **fetch-loader.ts** implements _moof_ and _mdat_ detection, and corresponding timestamp recording.
 
@@ -149,7 +149,7 @@ For all the cases not requiring rate calculation, the playback speed is set to 1
 
 The calculation takes advantages of natural exponential to fix the range of generated new rate with a reasonable threshold. You can find the detailed calculation explanation in [dash.js's wiki page](https://github.com/Dash-Industry-Forum/dash.js/wiki/Low-Latency-streaming#calculating-the-new-playback-rate).
 
-> The module is implemented in [src/controller/abr-controller.ts](https://github.com/InanisV/LoLp-HLS-v1.0.0-rc.1/blob/master/src/controller/abr-controller.ts) as several functions.
+> The module is implemented in [controller/abr-controller.ts](https://anonymous.4open.science/r/LLHLS-ABRs-80FE/controller/abr-controller.ts) as several functions.
 
 ## Reference
 
@@ -157,4 +157,4 @@ The calculation takes advantages of natural exponential to fix the range of gene
 
 ## Acknowledge
 
-By Dr. Abdelhak Bentaleb
+By Dr. Abdelhak Bentaleb and Zhengdao Zhan
