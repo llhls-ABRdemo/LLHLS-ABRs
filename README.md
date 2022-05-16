@@ -2,8 +2,6 @@
 
 # Integration of LoL+ in hls.js
 
-![LL-HLS workflow](https://github.com/InanisV/LoLp-HLS-v1.0.0-rc.4/actions/workflows/build.yml/badge.svg)
-
 Low-on-Latency-plus (LoL+) [1] has been implemented in [NUStreaming](https://github.com/NUStreaming)/**[LoL-plus](https://github.com/NUStreaming/LoL-plus)** based on [dash.js referance player v.3.2.0](https://github.com/Dash-Industry-Forum/dash.js), which has been proved to have an outstanding performance.
 
 This project is to integrate this live streaming algorithm with [video-dev](https://github.com/video-dev)/**[hls.js](https://github.com/video-dev/hls.js)**, a JavaScript HLS client using Media Source Extension. All the involved design and algorithm are illustrated in [1].
