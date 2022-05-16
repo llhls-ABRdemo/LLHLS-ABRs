@@ -36,7 +36,7 @@ Where:
 - <img src="http://latex.codecogs.com/svg.latex?\sigma=\text{minimum&space;bitrate}" title="http://latex.codecogs.com/svg.latex?\sigma=\text{minimum bitrate}" />
 - <img src="http://latex.codecogs.com/svg.latex?\mu=1" title="http://latex.codecogs.com/svg.latex?\mu=1" />
 
-> The module is implemented in two separate files, _[controller/LoLpQoeInfo.ts](https://anonymous.4open.science/r/LLHLS-ABRs-80FE/controller/LoLpQoeInfo.ts)_ and _[controller/LoLpQoeEvaluator.ts](https://github.com/llhls-ABRdemo/LLHLS-ABRs/blob/main/controller/LoLpQoeEvaluator.ts)_.
+> The module is implemented in two separate files, _[controller/LoLpQoeInfo.ts](https://anonymous.4open.science/r/LLHLS-ABRs-80FE/controller/LoLpQoeInfo.ts)_ and _[controller/LoLpQoeEvaluator.ts](https://anonymous.4open.science/r/LLHLS-ABRs-80FE/controller/LoLpQoeEvaluator.ts)_.
 
 **LoLpQoeInfo.ts** implements a class called **QoeInfo**, which is used to record the metrics and parameters for QoE calculation.
 
