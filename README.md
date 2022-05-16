@@ -157,6 +157,4 @@ The calculation takes advantages of natural exponential to fix the range of gene
 
 ## Acknowledge
 
-Dr. Abdelhak Bentaleb
-
-###### tags: `Projects`
+By Dr. Abdelhak Bentaleb
