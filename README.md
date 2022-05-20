@@ -1,5 +1,13 @@
 # Integration of LLHLS-ABRs (LoL+, L2A, Stallion, and Llama)
 
+1. Downlaod [hls.js] (https://github.com/video-dev/hls.js/) repo 
+
+2. Copy this repo files in their hls.js corresponding folders
+
+3. Follow this [readme](https://github.com/video-dev/hls.js/#readme) to compile the modified hls.js 
+
+4. Enable LL-HLS and one of the ABRs (LoL+, L2A, Stallion, and Llama) and start streaming
+
 # Integration of LoL+ in hls.js
 
 Low-on-Latency-plus (LoL+) [1] has been implemented in [NUStreaming](https://github.com/NUStreaming)/**[LoL-plus](https://github.com/NUStreaming/LoL-plus)** based on [dash.js referance player v.3.2.0](https://github.com/Dash-Industry-Forum/dash.js), which has been proved to have an outstanding performance.
