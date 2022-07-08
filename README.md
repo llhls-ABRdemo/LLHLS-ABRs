@@ -1,3 +1,7 @@
+# Paper
+Cite this Paper: 
+Abdelhak Bentaleb, Zhengdao Zhan, Farzad Tashtarian§, May Lim, Saad Harous+, Christian Timmerer, Hermann Hellwagner and Roger Zimmermann (2022, Oct). Low Latency Live Streaming Implementation in HLS, ACM MM.
+
 # Integration of LLHLS-ABRs (LoL+, L2A, Stallion, and Llama)
 
 1. Downlaod [hls.js] (https://github.com/video-dev/hls.js/) repo 
@@ -161,7 +165,7 @@ The calculation takes advantages of natural exponential to fix the range of gene
 
 ## Reference
 
-[1] Bentaleb, A., Akcay, M. N., Lim, M., Begen, A. C., & Zimmermann, R. (2020, Sept). Catching the Moment with LoL^+ in Twitch-Like Low-Latency Live Streaming Platforms (under review).
+[1] Bentaleb, A., Akcay, M. N., Lim, M., Begen, A. C., & Zimmermann, R. (2020, Sept). Catching the Moment with LoL^+ in Twitch-Like Low-Latency Live Streaming Platforms, TMM journal.
 
 ## Acknowledge
 
