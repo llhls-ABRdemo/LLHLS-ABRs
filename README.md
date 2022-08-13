@@ -1,6 +1,6 @@
 # Paper
 Cite this Paper: 
-Abdelhak Bentaleb, Zhengdao Zhan, Farzad Tashtarian§, May Lim, Saad Harous+, Christian Timmerer, Hermann Hellwagner and Roger Zimmermann (2022, Oct). __Low Latency Live Streaming Implementation in DASH and HLS__, ACM MM, 2022. __DOI: https://doi.org/10.1145/3503161.3548544__
+Abdelhak Bentaleb, Zhengdao Zhan, Farzad Tashtarian, May Lim, Saad Harous, Christian Timmerer, Hermann Hellwagner and Roger Zimmermann (2022, Oct). __Low Latency Live Streaming Implementation in DASH and HLS__, ACM MM, 2022. __DOI: https://doi.org/10.1145/3503161.3548544__
 
 # Integration of LLHLS-ABRs (LoL+, L2A, Stallion, and Llama)
 
